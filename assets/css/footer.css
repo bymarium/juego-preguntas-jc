@@ -1,7 +1,7 @@
 .footer {
+  position: relative;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  width: 100%;
   background: var(--first-color-alt);
   opacity: .9;
 }

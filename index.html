@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
   <title>Trivia de preguntas</title>
 </head>
 
@@ -29,7 +30,7 @@
       <div class="navbar__menu" id="navbar-menu">
         <ul class="navbar__list">
           <li>
-            <a href="#home" class="navbar__link">Inicio</a>
+            <a href="#home" class="navbar__link" id="homeh">Inicio</a>
           </li>
 
           <li>
@@ -41,7 +42,7 @@
           </li>
 
           <li>
-            <a href="#login" class="navbar__link"><i class="ri-user-fill"></i> Inicio sesión</a>
+            <a href="#login" class="navbar__link" id="loginh"><i class="ri-user-fill"></i> Inicio sesión</a>
           </li>
         </ul>
 
@@ -124,26 +125,36 @@
     </section>
 
     <section class="login section" id="login">
-
+      <div class="container__login">
+        <div class="title">Inicia facilmente</div>
+        <div class="form">
+          <form>
+            <br>
+            <input type="email" placeholder="Ingresa tu correo electronico" class="login__form">
+            <input type="password" placeholder="Ingresa una contraseña" class="login__form">
+            <input type="submit" value="Iniciar a jugar" class="btn-login login__form">
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer section">
+  <footer class="footer" id="footer">
     <div class="logo__footer">
       <img src="./assets/img/logo_color.png" alt="" />
     </div>
     <div class="links__footer">
       <div class="links">
         <h3>Redes Sociales</h3>
-        <a href=""> <i class="ri-instagram-fill"></i> Instagram</a>
-        <a href=""> <i class="ri-facebook-fill"></i> Facebook</a>
+        <a href="https://www.instagram.com/bymarium/" target="_blank"> <i class="ri-instagram-fill"></i> Instagram</a>
+        <a href="https://www.facebook.com/mariana.mejia.31508076/" target="_blank"> <i class="ri-facebook-fill"></i> Facebook</a>
       </div>
       <div class="links">
         <h3>Navegación rápida</h3>
-        <a href="#home"> <i class="ri-arrow-right-line"></i> Inicio</a>
+        <a href="#home" id="homef"> <i class="ri-arrow-right-line"></i> Inicio</a>
         <a href="#"> <i class="ri-arrow-right-line"></i> Juego</a>
         <a href="#rules" id="rulesf"><i class="ri-arrow-right-line"></i> Reglas de juego</a>
-        <a href="#login"><i class="ri-arrow-right-line"></i> Inicio sesión</a>
+        <a href="#login" id="loginf"><i class="ri-arrow-right-line"></i> Inicio sesión</a>
       </div>
     </div>
   </footer>

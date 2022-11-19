@@ -1,4 +1,5 @@
-const startGame = document.querySelector(".btn-neon");
+const startGameH = document.querySelector(".btn-neon");
+const startGameL = document.querySelector(".btn-login");
 const exitGame = document.querySelector(".buttons .quit");
 const gameQuiz = document.querySelector(".quiz__game");
 const resultGame = document.querySelector(".result__game");
@@ -8,8 +9,13 @@ const timeText = document.querySelector(".timer .time__left");
 const timeCount = document.querySelector(".timer .timer__sec");
 const btnSubmit = document.querySelector("footer .btn-submit");
 
-
-startGame.onclick = ()=>{
+startGameH.onclick = () => {
+    document.getElementById('login').style.display = "grid";
+    document.getElementById('home').style.display = "none";
+}
+startGameL.onclick = ()=>{
+    document.getElementById('login').style.display = "none";
+    document.getElementById('home').style.display = "flex";
     gameQuiz.classList.add("activeQuiz"); //mostrar el juego
     showQuetions(0); //llamado a la funcion showQuestions
     queCounter(1); //pasa un unico parametro a queCounter
@@ -116,12 +122,13 @@ function optionSelected(answer){
             answer.classList.add("correct"); //poner en verde la respuesta seleccionada
             answer.insertAdjacentHTML("beforeend", tickIconTag); //agregar icono de respuesta correcta
             console.log("Respuesta correcta");
-            console.log("Tus respuestas correctas = " + userScore);
+            console.log("Tu puntaje es = " + userScore);
         }else{
             userScore += incorrectAns;
             answer.classList.add("incorrect"); //poner en rojo la respuesta seleccionada
             answer.insertAdjacentHTML("beforeend", crossIconTag); //agregar icono de respuesta incorrecta
             console.log("Respuesta incorrecta");
+            console.log("Tu puntaje es = " + userScore);
     
             for(i=0; i < allOptions; i++){
                 if(optionGame.children[i].textContent == correcAns){ 

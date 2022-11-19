@@ -31,6 +31,7 @@ const scrollHeader = () => {
 
 window.addEventListener('scroll', scrollHeader);
 
+// Reglas de juego
 const alertH = document.getElementById("rulesh");
 if (alertH) {
   alertH.addEventListener("click", () => {
@@ -48,7 +49,6 @@ if (alertH) {
     });
   });
 }
-
 const alertF = document.getElementById("rulesf");
 if (alertF) {
   alertF.addEventListener("click", () => {
@@ -65,4 +65,29 @@ if (alertF) {
       },
     });
   });
+}
+//Login o inicio de sesion
+const loginH = document.getElementById("loginh");
+loginH.onclick = () => {
+  document.getElementById('login').style.display = "grid";
+  document.getElementById('home').style.display = "none";
+
+}
+
+const loginF = document.getElementById("loginf");
+loginF.onclick = () => {
+  document.getElementById('login').style.display = "grid";
+  document.getElementById('home').style.display = "none";
+}
+
+const homeH = document.getElementById("homeh");
+homeH.onclick = () => {
+  document.getElementById('login').style.display = "none";
+  document.getElementById('home').style.display = "grid";
+}
+
+const homeF = document.getElementById("homef");
+homeF.onclick = () => {
+  document.getElementById('login').style.display = "none";
+  document.getElementById('home').style.display = "grid";
 }
