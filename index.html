@@ -5,10 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/img/lg_neon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
   <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="shortcut icon" href="./assets/img/lg_neon.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <title>Trivia de preguntas</title>
 </head>
 
@@ -35,7 +37,7 @@
           </li>
 
           <li>
-            <a href="#rules" class="navbar__link">Reglas de juego</a>
+            <a href="#rules" class="navbar__link" id="rulesh">Reglas de juego</a>
           </li>
 
           <li>
@@ -77,9 +79,7 @@
     </section>
 
     <section class="rules section" >
-      <div class="info__rules">
-       
-      </div>
+       <!-- Aqui va la alerta de reglas que esta en javascript -->
     </section>
 
     <section class="login section" id="login">
@@ -101,10 +101,8 @@
         <h3>Navegación rápida</h3>
         <a href="#home"> <i class="ri-arrow-right-line"></i> Inicio</a>
         <a href="#game"> <i class="ri-arrow-right-line"></i> Juego</a>
-        <a href="#rules">
-          <i class="ri-arrow-right-line"></i> Reglas de juego</a>
-        <a href="#login">
-          <i class="ri-arrow-right-line"></i> Inicio sesión</a>
+        <a href="#rules" id="rulesf"><i class="ri-arrow-right-line"></i> Reglas de juego</a>
+        <a href="#login"><i class="ri-arrow-right-line"></i> Inicio sesión</a>
       </div>
     </div>
   </footer>
