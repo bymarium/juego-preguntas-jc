@@ -33,7 +33,7 @@
           </li>
 
           <li>
-            <a href="#game" class="navbar__link">Juego</a>
+            <a href="#" class="navbar__link">Juego</a>
           </li>
 
           <li>
@@ -75,7 +75,48 @@
 
 
     <section class="game section" id="game">
- 
+      <div class="quiz__game">
+        <header class="header__game">
+          <img src="./assets/img/logo_cultura.png" alt="" class="image">
+          <div class="title">¿Cuánto sabes de cultura general?</div>
+          <div class="timer">
+            <div class="time__left">Tiempo</div>
+            <div class="timer__sec">60</div>
+          </div>
+          <div class="time__line"></div>
+        </header>
+
+        <section class="section__game">
+          <div class="question__game">
+            <!-- Aqui van las preguntas que estan en JavaScript -->
+          </div>
+          <div class="option__game">
+            <!-- Aqui van las opciones de respuesta que estan en JavaScript -->
+          </div>
+        </section>
+
+        <footer class="footer__game">
+          <div class="total__question">
+            <!-- Aqui va el conteo de numero de preguntas que hay en JavaScript -->
+          </div>
+          <button class="btn-submit">Enviar</button>
+          <button class="btn-next">Siguiente</button>
+        </footer>
+      </div>
+
+      <div class="result__game">
+        <div class="icon">
+          <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete__game">Haz completado exitosamente el juego!</div>
+        <div class="score__game">
+          <!-- Aqui va el resultado/puntos de las preguntas -->
+        </div>
+        <div class="buttons">
+          <button class="restart">Repetir juego</button>
+          <button class="quit">Salir del juego</button>
+        </div>
+      </div>
     </section>
 
     <section class="rules section" >
@@ -100,7 +141,7 @@
       <div class="links">
         <h3>Navegación rápida</h3>
         <a href="#home"> <i class="ri-arrow-right-line"></i> Inicio</a>
-        <a href="#game"> <i class="ri-arrow-right-line"></i> Juego</a>
+        <a href="#"> <i class="ri-arrow-right-line"></i> Juego</a>
         <a href="#rules" id="rulesf"><i class="ri-arrow-right-line"></i> Reglas de juego</a>
         <a href="#login"><i class="ri-arrow-right-line"></i> Inicio sesión</a>
       </div>
@@ -108,8 +149,8 @@
   </footer>
   <!-- link javascript -->
   <script src="./assets/js/index.js"></script>
-  <!-- <script src="./assets/js/quiz.js"></script>
-  <script src="./assets/js/questions.js"></script> -->
+  <script src="./assets/js/quiz.js"></script>
+  <script src="./assets/js/questions.js"></script>
 </body>
 
 </html>
