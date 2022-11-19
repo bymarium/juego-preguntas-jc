@@ -1,0 +1,38 @@
+.container{
+    max-width: auto;
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding-block: 5rem 1.5rem;
+}
+
+.section__tittle{
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font);
+    font-weight: initial;
+    line-height: 130%;
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+main{
+    overflow: hidden;
+}
+
+.shape__small{
+    width: 150px;
+    height: 150px;
+}
+
+.shape__big{
+    width: 250px;
+    height: 250px;
+    opacity: .8;
+}

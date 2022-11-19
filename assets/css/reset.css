@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8.5rem;
+}
+
+html::-webkit-scrollbar {
+  width: .9rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--first-color-alt);
+  border-radius: 5rem;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  /* background-image: url(../img/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  color: var(--white-color);
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 5px 0;
+  margin: 0 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

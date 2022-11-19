@@ -1,0 +1,9 @@
+@import './variables.css';
+@import './reset.css';
+@import './generales.css';
+@import './header.css';
+@import './home.css';
+/* @import './game.css'; */
+@import './rules.css';
+@import './login.css';
+@import './footer.css';
